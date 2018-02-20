@@ -28,7 +28,7 @@ function WebAppConfig() {
 WebAppConfig();
 
 
-// Start server
+// Start server !
 
 app.listen(projectValues.port, () => {
   console.log('Server started on port# ' + projectValues.port );
