@@ -1,5 +1,6 @@
 const promise = require('promise');
 const DicApi = require('./googleApi');
+const dictionaryWebServiceParam = require('./Params/dictionaryWebServiceParam');
 
 module.exports={
     translate: (source, target, text) => {
@@ -7,7 +8,11 @@ module.exports={
         return new promise( (resolve, reject)=> {
             t.translate().then(response => {
                 console.log('translate.js resolve'+ response);
-                resolve(response);                
+                dictionaryWebServiceParam.wsTranslateOutput.source = source;
+                dictionaryWebServiceParam.wsTranslateOutput.target = target;
+                dictionaryWebServiceParam.wsTranslateOutput.sourceText = text;
+                dictionaryWebServiceParam.wsTranslateOutput.targetText = response;
+                resolve(dictionaryWebServiceParam.wsTranslateOutput);                
             }).catch(error => {
                 reject(error) ;                
             });
