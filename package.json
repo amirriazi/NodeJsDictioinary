@@ -4,6 +4,7 @@
   "description": "Telegram bot for dictionary",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -22,5 +23,8 @@
     "mssql": "^4.1.0",
     "promise": "^8.0.1",
     "tedious": "^2.2.4"
+  },
+  "engines": {
+    "node": "8.9.4"
   }
 }

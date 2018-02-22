@@ -29,11 +29,14 @@ WebAppConfig();
 
 
 // Start server !
-
+/*
 app.listen(projectValues.port, () => {
   console.log('Server started on port# ' + projectValues.port );
 })
-
+*/
+app.listen(projectValues.server_port, projectValues.server_ip_address, function () {
+	console.log( "Listening on " + projectValues.server_ip_address + ", port " + projectValues.server_port )
+ });
 //For Test **** 
 //require('./test/jsontest').jsonTest();
 
