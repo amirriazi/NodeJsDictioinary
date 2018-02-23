@@ -1,10 +1,10 @@
 {
   "name": "dictionarybot",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Telegram bot for dictionary",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,6 +12,10 @@
     "telegram",
     "bot"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amirriazi/NodeJsDictioinary.git"
+  },  
   "author": "amirriazi",
   "license": "ISC",
   "dependencies": {
